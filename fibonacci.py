@@ -1,3 +1,4 @@
+#打印斐波那契数列前10项
 def fibonacci(n):
     fib_sequence = []
     a, b = 0, 1
