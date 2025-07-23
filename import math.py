@@ -1,3 +1,4 @@
+#判断是否为质数
 def is_prime(n):
     counter = 0
     if n <= 1:
@@ -14,4 +15,4 @@ def is_prime(n):
         else:
             print(True)
         
-is_prime(10)
+is_prime(input("请输入数字："))
