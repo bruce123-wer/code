@@ -13,7 +13,7 @@
       - 在本示例中我们只需要使得循环体循环十次，而不需要使用到循环的变量，因此使用for _ in range(n)
 
 2. filter函数
-   - def is_A_student(score):
+  - def is_A_student(score):
        return score>=75
      lambda score:score>=75
      为什么这两个函数等效？为什么不是lambda score:return score>=75
