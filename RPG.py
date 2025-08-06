@@ -13,7 +13,7 @@ player = {
         "恢复药水": {"num": 0, "life": 20, "cost": 20},
         "魔法药水": {"num": 0, "magic": 20, "cost": 20},
     },
-    "coins": 160,
+    "coins": 0,
 }
 little_monster = {
     "attributes": {
@@ -31,6 +31,11 @@ boss = {
 
 # 挑战模式
 def fight():
+    # 初始化统计变量
+    life_medicine_uesd = 0
+    magic_medicine_used = 0
+    shield_damaged = 0
+
     # 玩家选择
     while True:
         player_choose = input(
@@ -360,7 +365,7 @@ def store():
         if player_input == "1":
             while True:
                 player_input1 = input(
-                    f"护盾可以提供{player['equipments']['护盾']['defense']}点护盾值，怪物必须破坏护盾才可以伤害到玩家，价值{player['equipments']['护盾']['cost']}金币,按下1购买，\n按下2返回商店初始界面,\n玩家输入："
+                    f"护盾可以提供{player['equipments']['护盾']['defense']}点护盾值，怪物必须破坏护盾才可以伤害到玩家，价值{player['equipments']['护盾']['cost']}金币,\n按下1购买，\n按下2返回商店初始界面,\n玩家输入："
                 )
                 if player_input1 == "1":
                     player["coins"] -= player["equipments"]["护盾"]["cost"]
@@ -465,6 +470,3 @@ while True:
             break
         case _:
             print("请在给定的范围内选择哦！")
-
-
-
