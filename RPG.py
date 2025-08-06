@@ -178,7 +178,7 @@ def fight():
                     print(f"你受到了{damage}点伤害！剩余血量为{player_life}")
                 print("")
             else:
-                print("恭喜你获得了胜利！小怪掉落了20个金币！")
+                print(f"恭喜你获得了胜利！小怪掉落了{monster_drops}个金币！")
                 print("")
 
         else:
@@ -326,7 +326,7 @@ def fight():
                         print(f"你受到了{damage}点伤害！剩余血量为{player_life}")
                     print("")
             else:
-                print("恭喜你获得了胜利！boss掉落了40个金币！")
+                print(f"恭喜你获得了胜利！boss掉落了{monster_drops}个金币！")
                 print("")
 
         else:
@@ -465,5 +465,6 @@ while True:
             break
         case _:
             print("请在给定的范围内选择哦！")
+
 
 
