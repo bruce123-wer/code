@@ -125,8 +125,6 @@ def fight():
                         print("请在给定的范围内选择哦！")
                         print("")
             else:
-                life_medicine_uesd = 0
-                magic_medicine_used = 0
                 while True:
                     player_input2 = input(
                         "按下1使用恢复药水，\n按下2使用魔法药水\n玩家输入："
@@ -256,8 +254,6 @@ def fight():
                         print("请在给定的范围内选择哦！")
                         print("")
             else:
-                life_medicine_uesd = 0
-                magic_medicine_used = 0
                 while True:
                     player_input2 = input(
                         "按下1使用恢复药水，\n按下2使用魔法药水\n玩家输入："
