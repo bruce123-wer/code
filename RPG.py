@@ -133,7 +133,7 @@ def fight():
                             player_props["恢复药水"]["num"] -= 1
                             life_medicine_uesd += 1
                             print(
-                                f"使用了恢复药水！生命值恢复{player_props['恢复药水']['life']}点"
+                                f"你使用了恢复药水！生命值恢复{player_props['恢复药水']['life']}点"
                             )
                             print(f"剩余药水数量：{player_props['恢复药水']['num']}")
                             print("")
@@ -148,7 +148,7 @@ def fight():
                             player_props["魔法药水"]["num"] -= 1
                             magic_medicine_used += 1
                             print(
-                                f"使用了魔法药水！魔力值恢复{player_props['魔法药水']['magic']}点"
+                                f"你使用了魔法药水！魔力值恢复{player_props['魔法药水']['magic']}点"
                             )
                             print(f"剩余药水数量：{player_props['魔法药水']['num']}")
                             print("")
@@ -264,7 +264,7 @@ def fight():
                             player_props["恢复药水"]["num"] -= 1
                             life_medicine_uesd += 1
                             print(
-                                f"使用了恢复药水！生命值恢复{player_props['恢复药水']['life']}点"
+                                f"你使用了恢复药水！生命值恢复{player_props['恢复药水']['life']}点"
                             )
                             print(f"剩余药水数量：{player_props['恢复药水']['num']}")
                             print("")
@@ -279,7 +279,7 @@ def fight():
                             player_props["魔法药水"]["num"] -= 1
                             magic_medicine_used += 1
                             print(
-                                f"使用了魔法药水！魔力值恢复{player_props['魔法药水']['magic']}点"
+                                f"你使用了魔法药水！魔力值恢复{player_props['魔法药水']['magic']}点"
                             )
                             print(f"剩余药水数量：{player_props['魔法药水']['num']}")
                             print("")
@@ -465,4 +465,5 @@ while True:
             break
         case _:
             print("请在给定的范围内选择哦！")
+
 
