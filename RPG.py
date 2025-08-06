@@ -115,6 +115,7 @@ def fight():
                             print("魔力不足！")
                             print("")
                             player_magic -= player_skills["ultimate_skill"]["magic"]
+                            break
                     else:
                         print("请在给定的范围内选择哦！")
                         print("")
@@ -140,6 +141,7 @@ def fight():
                         else:
                             print("恢复药水不足！")
                             print("")
+                            break
                     elif player_input2 == "2":
                         if player_props["魔法药水"]["num"] > 0:
                             player_magic += player_props["魔法药水"]["magic"]
@@ -154,6 +156,7 @@ def fight():
                         else:
                             print("魔法药水不足！")
                             print("")
+                            break
                     else:
                         print("请在给定的范围内选择哦！")
                         print("")
@@ -243,6 +246,7 @@ def fight():
                             print("魔力不足！")
                             print("")
                             player_magic -= player_skills["ultimate_skill"]["magic"]
+                            break
                     else:
                         print("请在给定的范围内选择哦！")
                         print("")
@@ -268,6 +272,7 @@ def fight():
                         else:
                             print("恢复药水不足！")
                             print("")
+                            break
                     elif player_input2 == "2":
                         if player_props["魔法药水"]["num"] > 0:
                             player_magic += player_props["魔法药水"]["magic"]
@@ -282,12 +287,13 @@ def fight():
                         else:
                             print("魔法药水不足！")
                             print("")
+                            break
                     else:
                         print("请在给定的范围内选择哦！")
                         print("")
             # boss的回合
             if monster_life > 0:
-                if count % 4 != 0:
+                if count % 3 != 0:
                     print("现在是boss的回合，boss对你使用了普攻！")
                     damage = abs(monster_skills["normal_attack"]["life"])
                     total_damage += damage
@@ -459,3 +465,4 @@ while True:
             break
         case _:
             print("请在给定的范围内选择哦！")
+
